@@ -31,6 +31,41 @@ body {
   max-width: 300px;
 }
 
+.cta a{
+  text-decoration: none;
+  color: #2D5461;
+}
+
+a.link-2{
+  color:#3A612D
+}
+
+a.link-2:visited{
+  color: #D2F0FA;
+}
+a.link-2:hover, a.link-2:focus, a.link-2:active{
+  text-shadow: 2px 2px 5px grey;
+}
+
+.impact{
+  text-align: center;
+  font-weight: bold;
+}
+
+p.storybook::first-letter{
+  font-size: 200%;
+}
+
+.submit-button {
+  border-radius: .5rem;
+  background: #3A612D;
+  color: white;
+}
+
+.highlight-background {
+  background-color: #D2F0FA;
+}
+
 footer {
   background-color: #D2F0FA;
   padding: 1rem;
