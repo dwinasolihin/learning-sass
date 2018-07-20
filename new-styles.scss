@@ -1,8 +1,22 @@
+$accent: #3A612D;
+$highlight-color: #D2F0FA;
+$brand: #2D5461;
+
+
+@mixin card($bg-color) {
+  box-shadow: gray 3px 3px 8px;
+  background-color: $bg-color;
+}
+
+article:first-of-type {
+  @include card($highlight-color);
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #2D5461;
+    color: $brand;
     font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;;
   }
 
@@ -16,36 +30,37 @@ body {
   }
 
   .cta {
+    @include card(#C0FABE);
     text-align: center;
     display: flex;
     flex-flow: column nowrap;
     padding: 1rem;
     justify-content: center;
     align-items: space-around;
-    box-shadow: gray 3px 3px 8px;
-    background-color: #C0FABE;
     margin: 1rem;
-  }
 
-  .cta img {
-    max-width: 300px;
-  }
 
-  .cta a{
-    text-decoration: none;
-    color: #2D5461;
+    img {
+      max-width: 300px;
+    }
+
+    a{
+      text-decoration: none;
+      color: $brand;
+    }
   }
 
   a.link-2{
-    color:#3A612D
-  }
+    color: $accent;
 
-  a.link-2:visited{
-    color: #D2F0FA;
-  }
-  a.link-2:hover, a.link-2:focus, a.link-2:active{
+    &:visited{
+      color: $highlight-color;
+    }
+
+    &:hover, &:focus, &:active{
     text-shadow: 2px 2px 5px grey;
   }
+}
 
   .impact{
     text-align: center;
@@ -58,15 +73,16 @@ body {
 
   .submit-button {
     border-radius: .5rem;
-    background: #3A612D;
+    background: $accent;
     color: white;
   }
 
   .highlight-background {
-    background-color: #D2F0FA;
+    background-color: $highlight-color;
   }
 
   footer {
-    background-color: #D2F0FA;
+    background-color: $highlight-color;
     padding: 1rem;
   }
+
