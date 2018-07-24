@@ -1,0 +1,67 @@
+//globals
+@import 'globals/colors';
+@import 'globals/typography';
+
+//components
+@import 'components/cta';
+@import 'components/footer';
+
+article:first-of-type {
+  @include card($highlight-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $brand;
+    font-family: $base-font;
+  }
+
+  h1, h2 {
+    font: $title-font;
+  }
+
+  h3, h4, h5, h6 {
+    font: $subtitle-font;
+  }
+
+  .cta-container {
+    margin: 1rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  a.link-2{
+    color: $accent;
+
+    &:visited{
+      color: $highlight-color;
+    }
+
+    &:hover, &:focus, &:active{
+    text-shadow: 2px 2px 5px grey;
+  }
+}
+
+  .impact{
+    text-align: center;
+    font-weight: bold;
+  }
+
+  p.storybook::first-letter{
+    font-size: 200%;
+  }
+
+  .submit-button {
+    border-radius: .5rem;
+    background: $accent;
+    color: white;
+  }
+
+  .highlight-background {
+    background-color: $highlight-color;
+  }

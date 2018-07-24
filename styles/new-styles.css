@@ -1,0 +1,88 @@
+.cta {
+  -webkit-box-shadow: gray 3px 3px 8px;
+          box-shadow: gray 3px 3px 8px;
+  background-color: #C0FABE;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  margin: 1rem; }
+  .cta img {
+    max-width: 300px; }
+  .cta a {
+    text-decoration: none;
+    color: #2D5461; }
+
+footer {
+  background-color: #D2F0FA;
+  padding: 1rem; }
+
+article:first-of-type {
+  -webkit-box-shadow: gray 3px 3px 8px;
+          box-shadow: gray 3px 3px 8px;
+  background-color: #D2F0FA; }
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #2D5461;
+  font-family: 0.9rem Helvetica, "Trebuchet MS", Verdana, sans-serif; }
+
+h1, h2 {
+  font: 2.2rem "Lucinda Console", monospace; }
+
+h3, h4, h5, h6 {
+  font: italic 1.6rem "Lucinda Console", monospace; }
+
+.cta-container {
+  margin: 1rem auto;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+a.link-2 {
+  color: #3A612D; }
+  a.link-2:visited {
+    color: #D2F0FA; }
+  a.link-2:hover, a.link-2:focus, a.link-2:active {
+    text-shadow: 2px 2px 5px grey; }
+
+.impact {
+  text-align: center;
+  font-weight: bold; }
+
+p.storybook::first-letter {
+  font-size: 200%; }
+
+.submit-button {
+  border-radius: .5rem;
+  background: #3A612D;
+  color: white; }
+
+.highlight-background {
+  background-color: #D2F0FA; }
+
+/*# sourceMappingURL=new-styles.css.map */
